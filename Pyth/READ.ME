@@ -1,0 +1,4 @@
+ I've introduced a Redis connection pool using redis.ConnectionPool. This should work better with eventlet's asynchronous nature. Also, I've adjusted the decode_responses parameter to True to ensure that responses from Redis are decoded to UTF-8, which is compatible with Flask.
+
+Make sure to install the required packages by running:
+pip install eventlet flask redis
